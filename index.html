@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mounika Geriki | Data Science & AI</title>
+  <meta name="description" content="Portfolio of Mounika Geriki – Data Scientist, ML Engineer, and LLM Researcher.">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Icons are local (assets/icons/*) -->
+</head>
+<body>
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">MG</span>
+        <span class="logo-text">Mounika Geriki</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="hero-name-group">
+          <span class="hero-greeting">Hi, I'm</span>
+          <h1 class="hero-name"><span class="accent">Mounika</span></h1>
+        </div>
+        <h2 class="hero-subtitle">Building production-ready data systems and LLM applications.</h2>
+        <p class="hero-text">
+          I work at the intersection of data engineering, analytics, and applied AI—focused on building systems that are reliable, scalable, and useful in real-world settings.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer">
+            <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mounika-geriki23" target="_blank" rel="noreferrer">
+            <img class="icon" src="assets/icons/linkedin.svg" alt="" aria-hidden="true" /> LinkedIn
+          </a>
+          <a href="mailto:mounika.geriki@stonybrook.edu">
+            <img class="icon" src="assets/icons/email.svg" alt="" aria-hidden="true" /> Email
+          </a>
+          <!-- Update this href to your hosted resume PDF path -->
+          <a href="Mounika_Geriki_Resume.pdf" target="_blank" rel="noreferrer">
+            <img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-orbit">
+          <div class="hero-orbit-ring"></div>
+          <div class="hero-avatar">
+            <img src="assets/profile.jpeg" alt="Mounika Geriki" class="hero-avatar-img" />
+          </div>
+          <div class="hero-orbit-pill pill-llm">LLMs &amp; RAG</div>
+          <div class="hero-orbit-pill pill-data">Data Systems</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="hero-metrics-grid">
+        <div class="hero-card">
+          <div class="hero-metric-number">200K+</div>
+          <div class="hero-metric-label">Users supported by data platforms</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-metric-number">85%+</div>
+          <div class="hero-metric-label">Model performance in production</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-metric-number">40%</div>
+          <div class="hero-metric-label">Improvement in pipeline efficiency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container section-inner two-column">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I'm a Data Science graduate student at <strong>Stony Brook University</strong>, with professional experience spanning analytics, data engineering, and applied machine learning.
+        </p>
+        <p>
+          My background includes building large-scale data pipelines, designing analytics systems, and working on domain-specific LLMs for scientific text understanding. I enjoy solving problems that sit between engineering and decision-making—where data quality, system design, and usability matter just as much as models.
+        </p>
+        <p>
+          I'm particularly interested in LLMs, retrieval-augmented generation (RAG), data platforms, and turning experimental ideas into practical, production-ready tools.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <p class="about-label">Education</p>
+          <p class="about-main">M.S. Data Science</p>
+          <p class="about-sub">Stony Brook University · GPA 3.55</p>
+        </div>
+        <div class="about-card">
+          <p class="about-label">Location</p>
+          <p class="about-main">Stony Brook, NY</p>
+          <p class="about-sub">Open to relocation & hybrid/onsite roles</p>
+        </div>
+        <div class="about-card">
+          <p class="about-label">Focus Areas</p>
+          <p class="about-main">LLMs · RAG · Data Engineering</p>
+          <p class="about-sub">Cloud, ETL, ML Ops foundations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW I WORK ===== -->
+  <section id="how-i-work" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">How I Work</h2>
+      <p class="section-subtitle" style="color: var(--muted); margin-bottom: 2rem;">When I build systems, I focus on clarity, reliability, and long-term usability.</p>
+      <div class="how-i-work-grid">
+        <div class="work-principle">
+          <div class="principle-icon">📊</div>
+          <h3>I start by understanding the data and the problem, not the model</h3>
+        </div>
+        <div class="work-principle">
+          <div class="principle-icon">🔧</div>
+          <h3>I design simple, modular pipelines before adding complexity</h3>
+        </div>
+        <div class="work-principle">
+          <div class="principle-icon">🤖</div>
+          <h3>I treat LLMs as systems, not just APIs</h3>
+        </div>
+        <div class="work-principle">
+          <div class="principle-icon">🔍</div>
+          <h3>I prioritize explainability, evaluation, and failure handling</h3>
+        </div>
+        <div class="work-principle">
+          <div class="principle-icon">👥</div>
+          <h3>I build with real users and production constraints in mind</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle" style="text-align: center; color: var(--muted); margin-bottom: 2.5rem;">Here are some of my skills on which I have been working on in the past years.</p>
+      
+      <div class="skills-categories">
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/python.svg" alt="" aria-hidden="true" />
+              <span>Python</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/database.svg" alt="" aria-hidden="true" />
+              <span>SQL</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/r.svg" alt="" aria-hidden="true" />
+              <span>R</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/mysql.svg" alt="" aria-hidden="true" />
+              <span>MySQL</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/postgresql.svg" alt="" aria-hidden="true" />
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/oracle.svg" alt="" aria-hidden="true" />
+              <span>Oracle</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/html5.svg" alt="" aria-hidden="true" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/css3.svg" alt="" aria-hidden="true" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/javascript.svg" alt="" aria-hidden="true" />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/cplusplus.svg" alt="" aria-hidden="true" />
+              <span>C/C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML & AI -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">ML & AI</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Scikit-learn</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/tensorflow.svg" alt="" aria-hidden="true" />
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>LightGBM</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>OpenCV</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>BERT</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>RAG</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>LoRA</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Generative AI</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>LLMs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Engineering -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">Data Engineering</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>ETL</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/python.svg" alt="" aria-hidden="true" />
+              <span>PySpark</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Snowflake</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>REST APIs</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>SOAP APIs</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/google.svg" alt="" aria-hidden="true" />
+              <span>BigQuery</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/google.svg" alt="" aria-hidden="true" />
+              <span>Vertex AI</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/google.svg" alt="" aria-hidden="true" />
+              <span>Composer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BI & Visualization -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">BI & Visualization</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Power BI</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Tableau</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/google.svg" alt="" aria-hidden="true" />
+              <span>Looker Studio</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Excel</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <div class="skill-chips">
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/aws.svg" alt="" aria-hidden="true" />
+              <span>AWS</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/gcp.svg" alt="" aria-hidden="true" />
+              <span>GCP</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/docker.svg" alt="" aria-hidden="true" />
+              <span>Docker</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/linux.svg" alt="" aria-hidden="true" />
+              <span>Linux</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/git.svg" alt="" aria-hidden="true" />
+              <span>Git</span>
+            </div>
+            <div class="skill-chip">
+              <img class="skill-icon" src="assets/icons/default.png" alt="" aria-hidden="true" />
+              <span>Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <!-- RA -->
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Graduate Research Assistant – LLMs</h3>
+              <span class="timeline-org">Stony Brook University · Jan 2025 – Present · Stony Brook, NY</span>
+            </div>
+            <p>
+              I work on adapting large language models for scientific knowledge extraction. My role involves experimenting with domain-specific LLMs, designing evaluation pipelines, and exploring how research models can be made more structured and reliable for downstream use.
+            </p>
+          </div>
+        </article>
+
+        <!-- Data Analyst -->
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Analyst</h3>
+              <span class="timeline-org">Tata Consultancy Services · Dec 2022 – Jan 2024 · Bengaluru, India</span>
+            </div>
+            <p>
+              I worked on enterprise-scale data pipelines and analytics systems, collaborating with cross-functional teams to transform complex data into actionable insights. My work focused on data reliability, automation, and stakeholder-driven analytics.
+            </p>
+          </div>
+        </article>
+
+        <!-- Associate Business Analyst -->
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Associate Business Analyst</h3>
+              <span class="timeline-org">Tata Consultancy Services · Jun 2021 – Nov 2022 · Bengaluru, India</span>
+            </div>
+            <p>
+              I built analytics foundations through SQL automation, dashboarding, and data modeling, learning how to translate business questions into clean, usable data solutions.
+            </p>
+          </div>
+        </article>
+
+        <!-- VI Solutions -->
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Machine Learning Intern</h3>
+              <span class="timeline-org">VI Solutions · Jul 2020 – Aug 2020 · Bengaluru, India</span>
+            </div>
+            <p>
+              I worked on applied machine learning problems including prediction models and computer vision, gaining early experience in deploying ML logic into real-time systems.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      
+      <!-- Featured Projects -->
+      <div class="featured-projects">
+        <h3 class="featured-title">⭐ Featured Projects</h3>
+        <div class="projects-grid">
+          <!-- InsightPilot Featured -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <img src="assets/projects/insightpilot.png" alt="InsightPilot Project" />
+            </div>
+            <div class="project-tag">AI · SQL · Agents</div>
+            <h3>InsightPilot – SQL AgenticAI</h3>
+            <p>
+              An intelligent AI agent that converts natural language questions into SQL queries and executes them automatically. Users can ask questions in plain English and receive data insights without writing SQL code.
+            </p>
+            <div class="project-meta">
+              <span>Python · AI · SQL · LLMs · Agents · Natural Language Processing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mounika-Geriki/InsightPilot-SQL-AgenticAI" target="_blank" rel="noreferrer">
+                <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- TravelWise Featured -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <img src="assets/projects/travelwise.png" alt="TravelWise-NYC Project" />
+            </div>
+            <div class="project-tag">RAG · Agents</div>
+            <h3>TravelWise-NYC – Adaptive RAG Chatbot</h3>
+            <p>
+              An intelligent travel assistant chatbot that answers questions about NYC using Retrieval-Augmented Generation. The system searches through curated travel documents and real-time web sources to provide accurate, context-aware responses with a streaming user interface.
+            </p>
+            <div class="project-meta">
+              <span>Python · Flask · GCP · LangChain · FAISS · Google AI Studio</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mounika-Geriki/TravelWise-Project-Using-RAG" target="_blank" rel="noreferrer">
+                <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- NYC Taxi Featured -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <img src="assets/projects/nyc-taxi.png" alt="NYC Taxi Insights Project" />
+            </div>
+            <div class="project-tag">Cloud · ML</div>
+            <h3>NYC Taxi Insights – Cloud Analytics</h3>
+            <p>
+              A comprehensive cloud-based analytics platform that processes NYC taxi trip data to predict trip durations and forecast demand. The system includes automated ETL pipelines, data warehousing, machine learning models, and interactive dashboards with real-time prediction APIs.
+            </p>
+            <div class="project-meta">
+              <span>GCP · BigQuery · Composer · Looker Studio · BERT · LightGBM · Render · Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Mounika-Geriki/NYCab-Insights" target="_blank" rel="noreferrer">
+                <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+      
+      <!-- Other Projects -->
+      <div class="other-projects">
+        <h3 class="other-projects-title">Other Projects</h3>
+        
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="llm-ai">LLM & Generative AI</button>
+          <button class="category-tab" data-category="data-engineering">Data Engineering & Cloud</button>
+          <button class="category-tab" data-category="machine-learning">Machine Learning & Modeling</button>
+        </div>
+        
+        <!-- LLM & AI Projects -->
+      <div class="project-category active" data-category="llm-ai">
+        <p class="category-description">Projects focused on building LLM-powered systems, RAG pipelines, and agent-based workflows for real-world applications.</p>
+        <div class="projects-grid">
+        <!-- InsightPilot SQL AgenticAI -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/insightpilot.png" alt="InsightPilot Project" />
+          </div>
+          <div class="project-tag">AI · SQL · Agents</div>
+          <h3>InsightPilot SQL AgenticAI</h3>
+          <p>
+            An intelligent AI agent that converts natural language questions into SQL queries and executes them automatically. Users can ask questions in plain English and receive data insights without writing SQL code.
+          </p>
+          <div class="project-meta">
+            <span>Python · AI · SQL · LLMs · Agents · Natural Language Processing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/InsightPilot-SQL-AgenticAI" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- TravelWise NYC -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/travelwise.png" alt="TravelWise-NYC Project" />
+          </div>
+          <div class="project-tag">RAG · Agents</div>
+          <h3>TravelWise-NYC: Adaptive RAG Travel Guide Chatbot</h3>
+          <p>
+            An intelligent travel assistant chatbot that answers questions about NYC using Retrieval-Augmented Generation. The system searches through curated travel documents and real-time web sources to provide accurate, context-aware responses with a streaming user interface.
+          </p>
+          <div class="project-meta">
+            <span>Python · Flask · GCP · LangChain · FAISS · Google AI Studio</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/TravelWise-Project-Using-RAG" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- LLM Research -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/llm-research.png" alt="LLM Research Project" />
+          </div>
+          <div class="project-tag">LLMs · Research</div>
+          <h3>Polymer & Battery LLM Extraction</h3>
+          <p>
+            A research project that fine-tunes domain-specific language models to extract structured information about polymer and battery properties from scientific papers. The system uses LoRA fine-tuning and prompt engineering to adapt models across different scientific domains.
+          </p>
+          <div class="project-meta">
+            <span>Python · MaterialsBERT · PolymerLLM · LoRA · Prompt Engineering · GPT-4 · Claude</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+         </article>
+
+        <!-- R package -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/default.png" alt="Project thumbnail" />
+          </div>
+            <div class="project-tag">R · Modeling</div>
+          <h3>Statistical Ensemble Package</h3>
+          <p>
+            R package for high-dimensional modeling (10K+ features) with ensemble learning framework supporting linear, logistic, ridge, lasso, and SVM models, achieving 85%+ accuracy with 40% runtime improvement through top-K feature selection.
+          </p>
+          <div class="project-meta">
+            <span>R · SVM · Regularized Regression · Ensemble Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Audio Summary LLM -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/default.png" alt="Project thumbnail" />
+          </div>
+            <div class="project-tag">LLMs · GenAI</div>
+          <h3>Audio Summary LLM – GenAI Capstone</h3>
+          <p>
+            An automated system that converts audio recordings into concise text summaries. The pipeline processes speech-to-text conversion and then uses large language models to generate structured summaries of the spoken content.
+          </p>
+          <div class="project-meta">
+            <span>Python · LLMs · Speech-to-Text · GenAI · NLP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/Audio_Summary_LLM_GenAI_Capstone_Kaggle" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Kaggle GenAI Assignments -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/genai.png" alt="GenAI project thumbnail" />
+          </div>
+            <div class="project-tag">GenAI · Kaggle</div>
+          <h3>Kaggle GenAI Assignments</h3>
+          <p>
+            A collection of hands-on projects exploring Generative AI capabilities including LLM applications, prompt engineering techniques, and various GenAI use cases developed through Kaggle courses.
+          </p>
+          <div class="project-meta">
+            <span>Python · Jupyter Notebook · GenAI · LLMs · Prompt Engineering</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/Kaggle-GenAi--Assignments" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        </div>
+      </div>
+
+      <!-- Data Engineering & Cloud Projects -->
+      <div class="project-category" data-category="data-engineering">
+        <p class="category-description">End-to-end data pipelines and cloud-based analytics systems designed for scalable processing and monitoring.</p>
+        <div class="projects-grid">
+        <!-- NYC Taxi -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/nyc-taxi.png" alt="NYC Taxi project thumbnail" />
+          </div>
+            <div class="project-tag">Cloud · ML</div>
+          <h3>NYC Taxi Insights – End-to-End Cloud Analytics</h3>
+          <p>
+            A comprehensive cloud-based analytics platform that processes NYC taxi trip data to predict trip durations and forecast demand. The system includes automated ETL pipelines, data warehousing, machine learning models, and interactive dashboards with real-time prediction APIs.
+          </p>
+          <div class="project-meta">
+            <span>GCP · BigQuery · Composer · Looker Studio · BERT · LightGBM · Render · Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/NYCab-Insights" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Patient Vital Monitoring GCP -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/default.png" alt="Project thumbnail" />
+          </div>
+            <div class="project-tag">GCP · Healthcare · IoT</div>
+          <h3>Patient Vital Monitoring using GCP</h3>
+          <p>
+            A real-time healthcare monitoring system that collects, processes, and analyzes patient vital signs data streams on Google Cloud Platform. The system provides continuous monitoring with automated alerts for critical health events.
+          </p>
+          <div class="project-meta">
+            <span>GCP · Python · Healthcare · Real-time Analytics · Cloud Functions · Pub/Sub</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/Patient-Vital-Monitoring-using-GCP" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+        </div>
+      </div>
+
+      <!-- Machine Learning Projects -->
+      <div class="project-category" data-category="machine-learning">
+        <p class="category-description">Applied machine learning projects focusing on predictive modeling, recommendations, and statistical learning techniques.</p>
+        <div class="projects-grid">
+        <!-- R package -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/default.png" alt="Project thumbnail" />
+          </div>
+            <div class="project-tag">R · Modeling</div>
+          <h3>Statistical Ensemble Package</h3>
+          <p>
+            R package for high-dimensional modeling (10K+ features) with ensemble learning framework supporting linear, logistic, ridge, lasso, and SVM models, achieving 85%+ accuracy with 40% runtime improvement through top-K feature selection.
+          </p>
+          <div class="project-meta">
+            <span>R · SVM · Regularized Regression · Ensemble Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Netflix Recommender System -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/default.png" alt="Project thumbnail" />
+          </div>
+            <div class="project-tag">ML · Recommender Systems</div>
+          <h3>Netflix Recommender System</h3>
+          <p>
+            A personalized content recommendation engine that suggests movies and TV shows to users based on their viewing history and preferences. The system combines collaborative filtering and content-based filtering techniques to deliver accurate recommendations.
+          </p>
+          <div class="project-meta">
+            <span>Python · Machine Learning · Recommender Systems · Collaborative Filtering · Content-Based Filtering</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mounika-Geriki/NetflixRecommenderSystem" target="_blank" rel="noreferrer">
+              <img class="icon" src="assets/icons/github.svg" alt="" aria-hidden="true" /> View on GitHub
+            </a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Deloitte Australia - Data Analytics Job Simulation</h3>
+          <p>Forage · Oct 2025</p>
+        </div>
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> GenAI Intensive</h3>
+          <p>Google/Kaggle</p>
+        </div>
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Machine Learning with Python</h3>
+          <p>Skill Trends · Sep 2020</p>
+        </div>
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Python for Everybody</h3>
+          <p>Coursera · Jul-Aug 2020</p>
+        </div>
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Data Science Fundamentals</h3>
+          <p>Coursera</p>
+        </div>
+        <div class="cert-card">
+          <h3><img class="icon" src="assets/icons/file.svg" alt="" aria-hidden="true" /> Image Processing Onramp</h3>
+          <p>MATLAB</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">Contact</h2>
+      <p style="text-align: center; margin-bottom: 2rem;">
+        I'm open to full-time roles in <strong>Data Engineering</strong>, <strong>Analytics Engineering</strong>, and <strong>AI/LLM-focused positions</strong>.
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mounika-geriki23" target="_blank" rel="noreferrer" class="social-link">
+          <img class="social-icon" src="assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer" class="social-link">
+          <img class="social-icon" src="assets/icons/github.svg" alt="GitHub" />
+        </a>
+        <a href="mailto:mounika.geriki@stonybrook.edu" class="social-link">
+          <img class="social-icon" src="assets/icons/email.svg" alt="Email" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mounika Geriki. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Mounika-Geriki" target="_blank" rel="noreferrer">
+          <img class="icon" src="assets/icons/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/mounika-geriki23" target="_blank" rel="noreferrer">
+          <img class="icon" src="assets/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
