@@ -1,3 +1,44 @@
+// Typewriter effect for hero name (runs when DOM is ready; fallback so name always shows)
+function initTypewriter() {
+  const el = document.querySelector(".typewriter-text");
+  if (!el) return;
+  const text = el.getAttribute("data-typing") || "Mounika";
+  const speed = 180;
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      el.textContent += text[i];
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+  // If typewriter didn't start (e.g. script error), show name after delay
+  setTimeout(function () {
+    if (el.textContent === "") el.textContent = text;
+  }, text.length * speed + 500);
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initTypewriter);
+} else {
+  initTypewriter();
+}
+
+// Contact form: open mailto with form data
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = (this.querySelector('[name="name"]') || {}).value || "";
+    const email = (this.querySelector('[name="email"]') || {}).value || "";
+    const subject = (this.querySelector('[name="subject"]') || {}).value || "";
+    const message = (this.querySelector('[name="message"]') || {}).value || "";
+    const body = "Name: " + name + "\n\n" + message;
+    const mailto = "mailto:mounika.geriki@stonybrook.edu?subject=" + encodeURIComponent(subject || "Portfolio contact") + "&body=" + encodeURIComponent(body);
+    window.location.href = mailto;
+  });
+}
+
 // Mobile nav toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
