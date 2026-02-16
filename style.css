@@ -605,10 +605,28 @@ body {
 }
 
 .timeline-content p {
-  margin: 0;
+  margin: 0.5rem 0 0.8rem;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.6;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.timeline-skill {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(79, 70, 229, 0.3);
 }
 
 /* Projects */
@@ -935,6 +953,37 @@ body {
   width: 26px;
   height: 26px;
   margin-right: 0.5rem;
+}
+
+.cert-card .cert-id {
+  font-size: 0.8rem;
+  color: var(--muted);
+  opacity: 0.9;
+  margin: 0.25rem 0 0.4rem;
+}
+
+.cert-card .cert-skills {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.cert-card .cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--border-subtle);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.cert-card .cert-link:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* Contact */
