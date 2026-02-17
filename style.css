@@ -299,18 +299,17 @@ body {
   height: 280px;
   border-radius: 999px;
   background: transparent;
-  box-shadow: var(--shadow-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-orbit-ring {
   position: absolute;
   inset: 8px;
   border-radius: inherit;
-  border: 1px dashed rgba(148, 163, 184, 0.55);
+  border: 1px dashed rgba(255, 255, 255, 0.85);
   z-index: 2;
   pointer-events: none;
 }
@@ -320,14 +319,32 @@ body {
   height: 100%;
   border-radius: 999px;
   background: transparent;
-  border: none;
-  box-shadow: none;
+  border: 3px solid rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5),
+              0 0 40px rgba(168, 85, 247, 0.3),
+              inset 0 0 20px rgba(168, 85, 247, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  animation: avatar-glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes avatar-glow-pulse {
+  0%, 100% {
+    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4),
+                0 0 40px rgba(168, 85, 247, 0.25),
+                inset 0 0 20px rgba(168, 85, 247, 0.06);
+  }
+  50% {
+    border-color: rgba(168, 85, 247, 0.85);
+    box-shadow: 0 0 28px rgba(168, 85, 247, 0.6),
+                0 0 56px rgba(168, 85, 247, 0.35),
+                inset 0 0 24px rgba(168, 85, 247, 0.1);
+  }
 }
 
 .hero-avatar-img {
@@ -348,6 +365,7 @@ body {
 
 .hero-orbit-pill {
   position: absolute;
+  z-index: 5;
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.95);
@@ -1266,6 +1284,9 @@ body {
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
+  .hero-avatar {
+    animation: none;
+  }
   .reveal {
     transition: none !important;
     transform: none !important;
